@@ -6,6 +6,7 @@ async function getData() {
     const allData = await predictCollection.get();
     return allData;
   } catch (e) {
+    console.log("Terjadi kesalahan dalam input file ke firebase");
     throw new Error("Terjadi kesalahan dalam input file ke firebase");
   }
 }

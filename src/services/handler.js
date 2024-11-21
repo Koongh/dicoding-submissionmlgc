@@ -34,6 +34,7 @@ async function postPredictHandler(request, h) {
 
     return response;
   } catch (e) {
+    console.log("Handler error");
     throw new InputError("Terjadi kesalahan dalam melakukan prediksi");
   }
 }
